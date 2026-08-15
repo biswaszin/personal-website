@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+:root {
+  --primary-color: #f8e6ee;
+}
+
 body {
   font-family: "Cascadia Code", sans-serif;
   font-optical-sizing: auto;
@@ -11,7 +15,7 @@ body {
   font-weight: 500;
   font-style: normal;
   overflow: hidden;
-  background: #f8e6ee;
+  background: var(--primary-color);
 }
 
 a {
@@ -30,11 +34,11 @@ img {
 .avatar-icon {
   width: 180px;
   height: 180px;
+  object-fit: contain;
 }
 
 /* Navbar */
 .navbar {
-  background: #f8e6ee;
   padding: 20px;
 }
 
@@ -70,12 +74,21 @@ img {
   font-size: 64px;
 }
 
+/* Hero */
+.hero-section .container {
+  display: flex;
+}
+
+.hero-section .hero-personal {
+  min-width: 300px;
+}
+
 /* Utility Classes */
 
 .container {
+  max-width: 1100px;
   margin: 0 auto;
   padding: 0 15px;
-  max-width: 1100px;
 }
 
 .container-sm {
